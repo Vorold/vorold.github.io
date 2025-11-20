@@ -1,5 +1,5 @@
 ---
-layout: post
+author: kostya
 title:  "Welcome to Jekyll!"
 date:   2025-11-19 23:57:48 +0300
 categories: jekyll update

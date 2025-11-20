@@ -1,0 +1,15 @@
+---
+# Вот тут нужен layout
+layout: default
+---
+<h1>{{ page.title }}</h1>
+
+<p>
+  {{ page.date | date_to_string }}
+  {% assign comrad = site.comrades | where: 'short_name', page.author | first %}
+  {% if comrad %}
+    - <a href="{{ comrad.url }}">{{ comrad.name }}</a>
+  {% endif %}
+</p>
+
+{{ content }}

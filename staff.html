@@ -1,0 +1,14 @@
+---
+title: Staff
+---
+<h1>Staff</h1>
+
+<ul>
+  {% for comrad in site.comrades %}
+    <li>
+      <h2><a href="{{ comrad.url }}">{{ comrad.name }}</a></h2>
+      <h3>{{ comrad.position }}</h3>
+      <p>{{ comrad.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
